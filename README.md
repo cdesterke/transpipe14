@@ -34,6 +34,9 @@ res<-degcofactor(final,pheno$group,control="NT",cofactor=pheno$batch)
 ## filter significant DEGs
 sig<-filtresig(res)
 
+## draw volcanoplot
+vollimma(res,nb=500,fc=0.5,p=0.05,size=4,alpha=1)
+
 ## subset matrix to significant genes
 process<-reducedf(sig,final,n=20)
 
