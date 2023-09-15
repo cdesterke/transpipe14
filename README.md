@@ -48,7 +48,7 @@ pcatransellipses(variable,pheno,group="group",pal="Set1",alpha=0.5,names=F,x=1,y
 ##perform PCA without ellipses
 pcatrans(variable,pheno,group="group",pal="Set1",alpha=0.7,names=TRUE)
 
-draw heatmap
+##draw heatmap
 bestheat(process,pheno,font=10,rownames=T)
 
 
